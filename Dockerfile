@@ -14,4 +14,8 @@ EXPOSE 8000
 
 ENTRYPOINT "./entrypoint.sh"
 
-LABEL io.portainer.commands.create-superuser="./manage.py createsuperuser"
+LABEL io.portainer.commands.createsuperuser="./manage.py createsuperuser"
+LABEL io.portainer.commands.prunepings="./manage.py prunepings"
+LABEL io.portainer.commands.prunechecks="./manage.py prunechecks"
+LABEL io.portainer.commands.prunenotifications="./manage.py prunenotifications"
+LABEL io.portainer.commands.pruneusers="./manage.py pruneusers"
