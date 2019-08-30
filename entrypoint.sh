@@ -1,5 +1,7 @@
 #!/usr/bin/env bash
 
+touch /opt/healthchecks/hc.sqlite
+
 ./manage.py migrate
 
 # run notification alerts (use while to mock as supervisor)
